@@ -15,7 +15,7 @@ class Ristorante:
             case False:
                 print("Il ristorante è chiuso!")
                 
-    def apri_ristorante(self): #setta apertura a True se non lo è già e printa lo stato di apertura del rist
+    def apri_ristorante(self): #setta aperto a True se non lo è già e printa lo stato di apertura del rist
         match self.aperto:  
             case True:
                 print("Il ristorante è già aperto!")
@@ -31,19 +31,19 @@ class Ristorante:
             case False:
                 print("Il ristorante è già chiuso!")
                 
-    def aggiungi_al_menù(self, piatto, prezzo):
+    def aggiungi_al_menù(self, piatto, prezzo): #aggiunge un piatto al menù
         self.menù[piatto] = prezzo
         
-    def togli_dal_menù(self, piatto):
+    def togli_dal_menù(self, piatto):  #toglie un piatto dal menù se c'è
         if piatto in self.menù.keys():     
             self.menù.pop(piatto)
         
-    def stampa_menù(self):
+    def stampa_menù(self):             #stampa il menù 
         print("### Menù ###")
         for k, v in self.menù.items():
             print(f"{k}: {v}$")
             
-menu = {"gyoza" : 7, "sahimi salmone" : 15, "uramaki mango" : 10}            
+menu = {"gyoza" : 7, "sahimi salmone" : 15, "uramaki mango" : 10, "sahimi tonno" : 15}            
 myRist = Ristorante("Suki Sushi", "Giapponese", menu, True)   
 
 #test metodi
