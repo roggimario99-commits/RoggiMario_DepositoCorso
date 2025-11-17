@@ -11,7 +11,7 @@ class Biblioteca:
         print("\n### Catalogo ###\n")
         for libro in self.libri: 
             print("--  ",libro)
-            print()
+        print()
             
             
 biblioteca = Biblioteca()

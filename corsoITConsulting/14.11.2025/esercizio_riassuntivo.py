@@ -72,7 +72,7 @@ if __name__ == "__main__":
         turno = 1
         vincita = False
         vincitore = []
-        fib_100 = fibbonacci(100) #primi 100 val della seq di fibbonacci
+        fib_100 = fibbonacci(100) #lista con i primi 100 val della seq di fibbonacci
         
         while not vincita:
             for i in range(players):

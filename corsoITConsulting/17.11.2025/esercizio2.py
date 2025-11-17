@@ -7,7 +7,7 @@ class Libro:
     def __str__(self):     #metodo speciale stampa
         return f"Il libro {self.titolo} è stato scritto da {self.autore} e ha {self.pagine} pagine."
   
-    
-libro1 = Libro("Notte","Pino Pini",100.7)  #definisco un'istanza della classe Libro
-print(libro1)                              #printo l'istanza libro1
+if __name__ == "__main__":
+    libro1 = Libro("Notte","Pino Pini",100.7)  #definisco un'istanza della classe Libro
+    print(libro1)                              #printo l'istanza libro1
         
