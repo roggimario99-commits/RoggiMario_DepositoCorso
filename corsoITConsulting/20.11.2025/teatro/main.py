@@ -118,23 +118,25 @@ class Teatro:
 if __name__ == "__main__":
     teatro = Teatro()
 
-
     
     # Creiamo alcuni posti
     p1 = PostoStandard(1, "A", 12.5)
     p2 = PostoStandard(2, "A", 12.5)
     vip1 = PostoVIP(1, "B", ["Accesso Lounge", "Bevanda Inclusa"])
-    print()
+
     
     # Aggiungiamoli al teatro
     teatro.aggiungi_posto(p1)
     teatro.aggiungi_posto(p2)
     teatro.aggiungi_posto(vip1)
-    print()
+
     
     # Prenotazioni
+    
+    print()
     teatro.prenota_posto(1, "A")
     teatro.prenota_posto(1, "B")
     teatro.prenota_posto(1, "B")  # Tentativo su posto occupato
-
+    
+    print()
     teatro.stampa_posti_occupati()
