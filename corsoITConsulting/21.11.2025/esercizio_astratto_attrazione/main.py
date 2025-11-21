@@ -25,3 +25,8 @@ print(f"Costo Totale Manutenzione Flotta: {gestore.costo_totale_manutenzione()}"
 gestore.stampa_veicoli()
 
 
+
+        
+        
+
+
