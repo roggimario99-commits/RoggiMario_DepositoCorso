@@ -18,7 +18,7 @@ newFile.close()
 #  utilizzo di with
 #-------------------------------------------------------
 
-with open("prova.txt", "r") as file:
+with open("prova.txt", "r") as file: #blocco with
     contenuto = file.read()
     
     print(contenuto)
